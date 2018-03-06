@@ -7,6 +7,7 @@ defmodule JwtTestUtils.MixProject do
       version: "0.1.0",
       elixir: "~> 1.6",
       start_permanent: Mix.env() == :prod,
+      aliases: aliases(),
       deps: deps(),
       package: package(),
       description: description(),
@@ -49,6 +50,12 @@ defmodule JwtTestUtils.MixProject do
       {:plug, "~> 1.4"},
       {:poison, "~> 3.1"},
       {:joken, "~> 1.5"}
+    ]
+  end
+
+  defp aliases do
+    [
+      compile: ["compile --warnings-as-errors"]
     ]
   end
 end
