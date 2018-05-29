@@ -4,7 +4,7 @@ defmodule JwtTestUtils.MixProject do
   def project do
     [
       app: :jwt_test_utils,
-      version: "0.1.1",
+      version: "0.2.0",
       elixir: "~> 1.6",
       start_permanent: Mix.env() == :prod,
       aliases: aliases(),
@@ -47,7 +47,7 @@ defmodule JwtTestUtils.MixProject do
     [
       {:ex_doc, "~> 0.16", only: :dev, runtime: false},
       {:excoveralls, "~> 0.8", only: :test},
-      {:plug, "~> 1.4"},
+      {:plug, "~> 1.5.1"},
       {:poison, "~> 3.1"},
       {:joken, "~> 1.5"}
     ]

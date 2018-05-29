@@ -6,6 +6,11 @@ defmodule JwtTestUtils.JwtMocker do
   import Joken
 
   @secret_key "secret_key"
+
+  @doc """
+  Returns the secret key used to sign the mock JWT tokens
+  """
+  @spec secret_key() :: String.t()
   def secret_key, do: @secret_key
 
   @doc """
